@@ -2,7 +2,11 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
-    <Table>
-    </Table>
+    <List items = "{/Employees}">
+    <items>
+    <ObjectListItem title="{FirstName} {LastName}" intro = "{Title}" number="{EmployeeID}">
+    </ObjectListItem>
+    </items>
+    </List>
     </Page>
 </mvc:View>
